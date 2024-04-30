@@ -1,0 +1,77 @@
+html {
+    height: 100%;
+}
+body {
+    background-color: hsl(0, 0%, 95%);
+    height: 100%;
+}
+.main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.card-layout-container {
+    width:755px;
+    height: 420px;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;  
+    margin: auto;
+}
+.card-layout-item {
+    width: calc(755px / 3);
+    padding: 36px;
+}
+.luxury-card {
+    background-color:hsl(179, 100%, 13%) ;
+}
+.sedans-card {
+    background-color:hsl(31, 77%, 52%) ;
+}
+.suvs-card {
+    background-color:hsl(184, 100%, 22%) ;
+}
+.card-heading{
+    color: #fff;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+}
+.card-text{
+    color:hsla(0, 0%, 100%, 0.75) ;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+}
+.card-button {
+    width: fit-content;
+    background-color: #fff;
+    font-family: 'Lexend Deca';
+    padding: 12px 24px;
+    margin-top: 60px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.sedans-btn {
+    color:hsl(31, 77%, 52%) ;
+}
+.suvs-btn {
+    color:hsl(184, 100%, 22%) ;
+}
+.luxury-btn {
+    color: hsl(179, 100%, 13%);
+}
+
+/* RESPONSIVE CSS */
+/* FOR MOBILE */
+@media only screen and (max-width: 739px) {
+    .card-layout-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+}
+
+
